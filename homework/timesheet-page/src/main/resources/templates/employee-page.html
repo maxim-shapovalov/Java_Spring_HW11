@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home / Employee Page</title>
+</head>
+<body>
+<h1>Идентификационный номер сотрудника #<span th:text="${employee.id}"></span></h1>
+Имя: <span th:text="${employee.firstName}"></span> <br>
+Фамилия: <span th:text="${employee.lastName}"></span> <br>
+Телефон: <span th:text="${employee.phone}"></span> <br>
+Название отдела: <span th:text="${employee.department}"></span> <br>
+
+
+</body>
+</html>
